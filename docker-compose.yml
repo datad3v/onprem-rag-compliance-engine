@@ -1,0 +1,20 @@
+services:
+  ollama:
+    image: ollama/ollama:rocm
+    container_name: enclave-ollama-backend
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_storage:/root/.ollama
+      - ./data:/workspace/data
+    environment:
+      - HSA_OVERRIDE_GFX_VERSION=10.3.0
+    devices:
+      - "/dev/kfd:/dev/kfd"
+      - "/dev/dri:/dev/dri"
+    security_opt:
+      - seccomp:unconfined
+
+volumes:
+  ollama_storage:

@@ -1,0 +1,12 @@
+# Local data directory containing databases and vector indexes
+data/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Operating system artifacts
+.DS_Store
+.idea/
+.vscode/
