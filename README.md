@@ -4,7 +4,7 @@ Project Covenant is a bare-metal, enterprise-grade **Autonomous Loan Compliance 
 
 By combining a structured core banking relational database with an unstructured vector database containing regulatory guidelines, the system executes an automated compliance audit loop without transferring sensitive consumer financial data over external networks.
 
-## 🏗️ Architecture Blueprint
+## Architecture Blueprint
 
 The system splits data ingestion and inference execution into a decoupled, zero-trust pipeline:
 
@@ -14,7 +14,7 @@ The system splits data ingestion and inference execution into a decoupled, zero-
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 * **Inference Engine:** Ollama running `qwen2.5:7b` (7-Billion Parameter Model optimized for structured processing)
 * **Hardware Acceleration:** AMD ROCm runtime passthrough for bare-metal Linux execution
@@ -25,7 +25,7 @@ The system splits data ingestion and inference execution into a decoupled, zero-
 
 ---
 
-## 🚀 Quickstart Installation & Deployment
+## Quickstart Installation & Deployment
 
 ### 1. Prerequisites
 Ensure you are running an Ubuntu-based Linux distribution (such as Pop!_OS) with an active AMD GPU configured with the proper driver stack.
