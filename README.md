@@ -1,8 +1,10 @@
 # Project Covenant: Autonomous Loan Compliance Auditor
 
-Project Covenant is a bare-metal, enterprise-grade **Autonomous Loan Compliance Auditor** built using an on-premise Retrieval-Augmented Generation (RAG) architecture. The entire application runs completely offline inside a secure enclave framework, leveraging a local AMD GPU for accelerated inference. 
+Project Covenant is a proof-of-concept autonomous compliance auditing platform designed to demonstrate how financial institutions could leverage localized AI models to evaluate lending decisions against regulatory guidelines without exposing sensitive customer data to external AI providers.
 
-By combining a structured core banking relational database with an unstructured vector database containing regulatory guidelines, the system executes an automated compliance audit loop without transferring sensitive consumer financial data over external networks.
+The platform combines structured borrower data with regulatory policy documentation through a Retrieval-Augmented Generation (RAG) architecture running entirely on-premises. By performing inference locally, the solution explores a governance-first approach to AI adoption in highly regulated environments where data privacy, auditability, and security are critical requirements.
+
+This project was created to investigate how organizations can balance AI-driven productivity gains with compliance, risk management, and data sovereignty concerns.
 
 ## Architecture Blueprint
 
